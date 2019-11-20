@@ -3,7 +3,7 @@ class Grid
   attr_accessor :layout
 
   def initialize
-    @layout = {a1: nil,
+    @layout = { a1: nil,
               a2: nil,
               a3: nil,
               b1: nil,
