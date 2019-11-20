@@ -1,9 +1,9 @@
 class Grid
 
-  attr_accessor :setup
+  attr_accessor :layout
 
   def initialize
-    @setup = [a1: nil,
+    @layout = {a1: nil,
               a2: nil,
               a3: nil,
               b1: nil,
@@ -12,7 +12,11 @@ class Grid
               c1: nil,
               c2: nil,
               c3: nil
-            ]
+            }
+  end
+
+  def show_square(cell)
+    layout.fetch(cell.to_sym)
   end
 
 end
