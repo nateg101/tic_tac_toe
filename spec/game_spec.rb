@@ -24,6 +24,10 @@ describe Game do
       game.move('a1', 'X')
       expect(game.current_player).to eq game.player2
     end
+
+    it 'raises a message saying which player is next' do
+      expect(game.move('a1', 'X')).to eq "Player O's turn"
+    end
   end
 
   context '#game_over?' do
