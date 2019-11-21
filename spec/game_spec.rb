@@ -12,7 +12,7 @@ describe Game do
 
     it 'throws a message if a square is taken' do
       game.move('a1', 'X')
-      expect{ game.move('a1', 'O') }.to raise_error ("That square's already taken playa")
+      expect { game.move('a1', 'O') }.to raise_error "That square's already taken playa"
     end
   end
 end
