@@ -20,6 +20,7 @@ class Grid
   end
 
   def grid_complete?
-    layout.none? { |square, mark| mark == nil }
+    layout.none? { |_square, mark| mark.nil? }
   end
+
 end
