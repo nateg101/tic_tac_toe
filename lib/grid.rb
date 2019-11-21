@@ -19,4 +19,8 @@ class Grid
     layout.fetch(cell.to_sym)
   end
 
+  def grid_complete?
+    layout.value?(nil)
+    # returns false if all squares are full
+  end
 end

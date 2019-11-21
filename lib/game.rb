@@ -9,8 +9,12 @@ class Game
 
   def move(cell, mark)
     raise "That square's already taken playa" if square_free?(cell)
-    
+
     grid.layout.store(cell.to_sym, mark)
+  end
+
+  def game_over?
+    return true if grid.grid_complete? == false
   end
 
   private
