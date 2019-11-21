@@ -20,7 +20,6 @@ class Grid
   end
 
   def grid_complete?
-    layout.value?(nil)
-    # returns false if all squares are full
+    layout.none? { |square, mark| mark == nil }
   end
 end

@@ -14,7 +14,7 @@ class Game
   end
 
   def game_over?
-    return true if grid.grid_complete? == false
+    grid.grid_complete?
   end
 
   private
