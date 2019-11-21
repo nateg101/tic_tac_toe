@@ -19,4 +19,5 @@ class Grid
     layout.fetch(cell.to_sym)
   end
 
+
 end
