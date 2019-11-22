@@ -26,7 +26,7 @@ class Game
   private
 
   def square_free?(cell)
-    grid.show_square(cell) != nil
+    grid.show_square(cell) != ''
   end
 
   def change_turn

@@ -3,15 +3,15 @@ class Grid
   attr_accessor :layout
 
   def initialize
-    @layout = { a1: nil,
-              a2: nil,
-              a3: nil,
-              b1: nil,
-              b2: nil,
-              b3: nil,
-              c1: nil,
-              c2: nil,
-              c3: nil
+    @layout = { a1: '',
+              a2: '',
+              a3: '',
+              b1: '',
+              b2: '',
+              b3: '',
+              c1: '',
+              c2: '',
+              c3: ''
             }
   end
 
@@ -20,7 +20,7 @@ class Grid
   end
 
   def grid_complete?
-    layout.none? { |_square, mark| mark.nil? }
+    layout.value?('') ? false : true
   end
 
 end
